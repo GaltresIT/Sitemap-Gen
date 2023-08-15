@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f3f4f6;
+        }
+        .header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .info-section {
+            background-color: #f0e4d7;
+            padding: 20px;
+            border-radius: 15px;
+        }
+        .form-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+    </style>
+    <title>Jonathan M Taylor | Sitemap Generator</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Free Sitemap Generator</h1>
+        <p>A simple and effective tool to create sitemaps for your website.</p>
+    </div>
+    <div class="container mt-5">
+        <div class="info-section">
+            <h3>What is a Sitemap?</h3>
+            <p>A sitemap is a file that provides information about the pages on your site. It's essential for SEO, making it easier for search engines to find all the pages on your site.</p>
+        </div>
+        <div class="form-container">
+            <form action="/generate_sitemap" method="post">
+                <div class="form-group">
+                    <label for="url">Enter Domain URL:</label>
+                    <input type="text" class="form-control" id="url" name="url" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Generate Sitemap</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
